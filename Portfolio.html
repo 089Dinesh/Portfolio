@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NightSpark | Portfolio</title>
+ <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #EEEEEE;
+  line-height: 1.6;
+}
+span {
+  opacity: 0;
+   animation: fadeIn 5s infinite forwards;
+   display: flex;
+   justify-content: flex-end;
+
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+}
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  background: linear-gradient(to right, #222831, #00ADB5);
+  padding: 60px 20px;
+  text-align: center;
+  color: #EEEEEE;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #00ADB5;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+nav {
+  background-color: #1f1f1f;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #00ADB5;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #EEEEEE;
+}
+
+main {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  color: #00ADB5;
+  margin-bottom: 20px;
+}
+.about{
+line-height: 2rem;
+font-family:initial;
+color: antiquewhite;
+font-size: 1.1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #1f1f1f;
+  border-radius: 15%;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 transparent;
+  border: 1px solid transparent;
+}
+
+.project-card:hover {
+  background-color: #393E46;
+  transform: translateY(-5px);
+}
+/* Contact Section */
+#contact {
+  padding: 80px 20px;
+  max-width: 600px;
+  margin: 100px auto 60px auto;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 173, 181, 0.1);
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+#contact p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #cccccc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input,
+textarea {
+  padding: 15px;
+  background: #121212;
+  border: 1px solid #333;
+  border-radius: 25px;
+  color: #EEEEEE;
+  font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #777;
+}
+
+button {
+  background-color: #00ADB5;
+  color: #121212;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #019ca4;
+}
+section {
+  padding: 80px 20px; 
+  max-width: 1000px;
+  margin: auto;
+}
+
+section + section {
+  margin-top: 60px;
+}
+section::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #00ADB5;
+  margin: 40px auto 0;
+  border-radius: 2px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+ </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>NightSpark</h1>
+      <p>Igniting ideas into digital realities</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+      <i> I'm a curious and driven individual with a passion for learning and creating. With a background in Web Development,<br>
+        I enjoy tackling new challenges and developing solutions that make a real impact. Outside of work, you'll often find me
+        exploring nature, experimenting in the kitchen, or getting lost in a good book.<br>
+        I value honesty, growth, and creativity, and I’m always looking for ways to improve both personally and professionally.
+    <span>-DINESH</span></i>
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>SkyDash</h3>
+          <p>A real-time dashboard UI for drone fleet control systems.</p>
+        </div>
+        <div class="project-card">
+          <h3>ByteBurst</h3>
+          <p>A social feed analyzer that identifies trending code snippets and projects.</p>
+        </div>
+        <div class="project-card">
+          <h3>GlowMapper</h3>
+          <p>Interactive map with glowing cities based on user activity data.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NightSpark. All rights reserved.</p>
+  </footer>
+</body>
+</html>
