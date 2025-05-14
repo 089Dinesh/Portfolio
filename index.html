@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>NightSpark | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
  <style>
     * {
   box-sizing: border-box;
@@ -89,19 +90,19 @@ h2 {
   color: #00ADB5;
   margin-bottom: 20px;
 }
+/* about */
 .about{
 line-height: 2rem;
 font-family:initial;
 color: antiquewhite;
 font-size: 1.1rem;
 }
-
+/* projects */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 25px;
 }
-
 .project-card {
   background: #1f1f1f;
   border-radius: 15%;
@@ -126,7 +127,6 @@ font-size: 1.1rem;
 }
 
 #contact h2 {
-  text-align: center;
   margin-bottom: 30px;
   font-size: 2rem;
 }
@@ -173,6 +173,7 @@ button {
 button:hover {
   background-color: #019ca4;
 }
+/*contact section end*/
 section {
   padding: 80px 20px; 
   max-width: 1000px;
@@ -190,11 +191,49 @@ section::after {
   background: #00ADB5;
   margin: 40px auto 0;
   border-radius: 2px;
+  animation: line 3s 0s infinite forwards ;
+}
+@keyframes line {
+  0%{
+    width: 0px;
+  }
+  100%{
+    width: 60px;
+  }
 }
 footer{
     display: flex;
     justify-content: center;
 }
+h2{
+  overflow: hidden; 
+  white-space: nowrap;
+  animation: typing 2s forwards infinite;
+}
+ @keyframes typing {
+      from {
+         width: 0
+         }
+      to { 
+        width: 9ch
+       }
+    }
+    .links{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .links a{
+      margin:2rem;
+      font-size:2rem;
+    }
+    .footer{
+      font-size: larger;
+      color:#00ADB5;
+    }
+    footer p{
+      color: #00ADB5;
+    }
  </style>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -216,7 +255,7 @@ footer{
 
   <main>
     <section id="about" class="about">
-      <h2>About Me</h2>
+      <h2>About me</h2>
       <p>
       <i> I'm a curious and driven individual with a passion for learning and creating. With a background in Web Development,<br>
         I enjoy tackling new challenges and developing solutions that make a real impact. Outside of work, you'll often find me
@@ -227,7 +266,7 @@ footer{
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
           <h3>SkyDash</h3>
@@ -256,7 +295,15 @@ footer{
   </main>
 
   <footer>
-    <p>&copy; 2025 NightSpark. All rights reserved.</p>
+    <div>
+   <div class="footer"> <p>&copy; 2025 NightSpark. All rights reserved.</p></div>
+  <div><p><i>You can contact me through:</i></p></div>
+    <div class="links">
+<a href="https://www.facebook.com/din.esh.16024"><i class="fab fa-facebook"></i></a>
+<a href="https://x.com/DineshPudasain9"><i class="fab fa-twitter"></i></a>
+<a href="https://www.instagram.com/089dinesh_/?next=%2F"><i class="fab fa-instagram"></i></a>
+    </div>
+    </div>
   </footer>
 </body>
 </html>
