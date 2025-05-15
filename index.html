@@ -105,16 +105,25 @@ font-size: 1.1rem;
 }
 .project-card {
   background: #1f1f1f;
-  border-radius: 15%;
+  border-radius:5%;
   padding: 20px;
   transition: all 0.3s ease;
   box-shadow: 0 0 0 transparent;
   border: 1px solid transparent;
 }
+.project-card h3 {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-card:hover h3 {
+  color: #00FFF5;
+  transform: translateY(-2px);
+}
 
 .project-card:hover {
   background-color: #393E46;
   transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(0, 173, 181, 0.5);
 }
 /* Contact Section */
 #contact {
@@ -208,7 +217,7 @@ footer{
 h2{
   overflow: hidden; 
   white-space: nowrap;
-  animation: typing 2s forwards infinite;
+  animation: typing 2s forwards;
 }
  @keyframes typing {
       from {
@@ -269,16 +278,28 @@ h2{
       <h2>My Projects</h2>
       <div class="projects-grid">
         <div class="project-card">
-          <h3>SkyDash</h3>
-          <p>A real-time dashboard UI for drone fleet control systems.</p>
+          <h3>📊 Dashboards & Data Visualization</h3>
+          <p>I develop interactive dashboards that turn raw data into actionable insights. Using libraries like Chart.js and D3, I focus on clarity, usability, and real-time data updates to support decision-making.</p>
         </div>
         <div class="project-card">
-          <h3>ByteBurst</h3>
-          <p>A social feed analyzer that identifies trending code snippets and projects.</p>
+          <h3>🛒 E-Commerce and Business Solutions</h3>
+          <p>I build scalable e-commerce platforms and custom business tools that streamline operations and enhance user engagement. From shopping carts to payment integrations, these projects emphasize performance and reliability.</p>
         </div>
         <div class="project-card">
-          <h3>GlowMapper</h3>
-          <p>Interactive map with glowing cities based on user activity data.</p>
+          <h3>🔐 Authentication & User Management</h3>
+          <p>These applications feature secure login systems, user roles, and session management using technologies like JWT, OAuth, and Firebase Auth. Security and user experience are always top priorities.</p>
+        </div>
+          <div class="project-card">
+          <h3>🚀 Full-Stack Web Applications</h3>
+          <p>I create dynamic, data-driven applications using modern full-stack technologies like React, Node.js, and MongoDB. These projects focus on real-world functionality, clean architecture, and responsive UI design.</p>
+        </div>
+        <div class="project-card">
+          <h3>🌐 API Integration Projects</h3>
+          <p>These projects demonstrate how I work with third-party APIs to build interactive tools such as weather apps, dashboards, and real-time services. I focus on error handling, data parsing, and smooth user experiences.</p>
+        </div>
+        <div class="project-card">
+          <h3>🎨 Frontend Interfaces</h3>
+          <p>With a strong eye for design and usability, I develop responsive, accessible frontends using HTML, CSS, JavaScript, and frameworks like React. I aim to build intuitive interfaces that work seamlessly across devices.</p>
         </div>
       </div>
     </section>
